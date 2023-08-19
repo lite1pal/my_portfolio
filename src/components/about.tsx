@@ -3,8 +3,9 @@ export default function About({
   aboutView,
 }: {
   fadeIn: boolean;
-  mainPageView: boolean;
+  aboutView: boolean;
 }) {
+  console.log(fadeIn, aboutView);
   return (
     <div
       id="mainpageDiv"

@@ -1,12 +1,6 @@
 import denis from "../../src/assets/photo_2023-08-09 11.53.36.jpeg";
 
-export default function MainPage({
-  fadeIn,
-  mainPageView,
-}: {
-  fadeIn: boolean;
-  mainPageView: boolean;
-}) {
+export default function MainPage({ fadeIn }: { fadeIn: boolean }) {
   return (
     <div
       id="mainpageDiv"
@@ -111,14 +105,6 @@ export default function MainPage({
           >
             <img height="auto" width="500" src={denis} alt="My image" />
           </div>
-          {/* <div
-            className={`flex items-center w-4/6 lg:w-1/3 mx-auto justify-between p-8 text-xl font-montserrat text-majollete transition duration-1000 ${
-              fadeIn && "translate-x-full"
-            }`}
-          >
-            <div>Projects</div>
-            <div>About</div>
-          </div> */}
         </div>
       </div>
     </div>

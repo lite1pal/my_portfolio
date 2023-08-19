@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import MainPage from "./components/mainpage";
 import BeneluxJob from "./components/beneluxjob";
 import Messanger from "./components/messanger";
-import About from "./components/about";
 import Blog from "./components/blog";
 
 function App() {
@@ -20,12 +19,10 @@ function App() {
   const [mainPageView, setMainPageView] = useState(true);
   const [beneluxJobView, setBeneluxJobView] = useState(true);
   const [messangerView, setMessangerView] = useState(true);
-  const [aboutView, setAboutView] = useState(true);
   const [blogView, setBlogView] = useState(true);
   // Add a scroll listener
   window.addEventListener("scroll", () => {
     const windowHeight = window.innerHeight;
-    const scrollPosition = window.scrollY;
 
     // Check if each component is in view
     if (mainPage && mainPage.getBoundingClientRect().top - windowHeight < 0) {
