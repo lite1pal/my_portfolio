@@ -91,7 +91,7 @@ export default function Messanger({
               </div>
             </div>
           </div>
-          <div className="flex flex-col space-y-3 font-raleway">
+          <div className="flex flex-col mx-auto space-y-3 font-raleway">
             <div className="text-xl">Used technologies</div>
             <div className="text-lg flex flex-wrap items-center space-x-3 max-md:space-y-3">
               <div className="flex items-center space-x-2">

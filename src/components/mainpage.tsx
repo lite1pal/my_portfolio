@@ -1,4 +1,4 @@
-import denis from "../../src/assets/photo_2023-08-09 11.53.36.jpeg";
+import denis from "../../src/assets/IMG_6818-removebg.png";
 
 export default function MainPage({ fadeIn }: { fadeIn: boolean }) {
   return (
@@ -99,7 +99,7 @@ export default function MainPage({ fadeIn }: { fadeIn: boolean }) {
         </div>
         <div className="w-full h-1/2 lg:h-full bg-mindaro lg:w-7/12 flex flex-col">
           <div
-            className={`m-auto transition duration-1000  ${
+            className={`m-auto shadow-md transition duration-1000  ${
               fadeIn && "translate-x-full"
             }`}
           >
