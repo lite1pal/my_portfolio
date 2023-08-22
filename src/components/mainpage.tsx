@@ -1,6 +1,14 @@
-import denis from "../../src/assets/IMG_6818-removebg.png";
+import { useState } from "react";
+import denis from "../../src/assets/DenisNotClear.png";
+import cropped_denis from "../../src/assets/DenisNotClear copy 2.png";
 
 export default function MainPage({ fadeIn }: { fadeIn: boolean }) {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  window.addEventListener("resize", () => {
+    setWindowWidth(window.innerWidth);
+  });
+
   return (
     <div
       id="mainpageDiv"
@@ -99,11 +107,16 @@ export default function MainPage({ fadeIn }: { fadeIn: boolean }) {
         </div>
         <div className="w-full h-1/2 lg:h-full bg-mindaro lg:w-7/12 flex flex-col">
           <div
-            className={`m-auto shadow-md transition duration-1000  ${
+            className={`m-auto max-lg: transition duration-1000  ${
               fadeIn && "translate-x-full"
             }`}
           >
-            <img height="auto" width="500" src={denis} alt="My image" />
+            <img
+              height="auto"
+              width={windowWidth < 1024 ? "400" : "500"}
+              src={windowWidth < 1024 ? cropped_denis : denis}
+              alt="My image"
+            />
           </div>
         </div>
       </div>
