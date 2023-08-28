@@ -21,16 +21,16 @@ export default function MainPage({ fadeIn }: { fadeIn: boolean }) {
               fadeIn && "-translate-x-full"
             }`}
           >
-            <div className="text-4xl flex flex-col font-bold max-lg:text-3xl items-center text-mindaro font-montserrat">
+            <div className="text-2xl lg:text-4xl flex flex-col font-bold items-center text-mindaro font-montserrat">
               <div>Frontend && Backend</div>
               <div>Developer.</div>
             </div>
-            <div className="text-white mx-auto text-lg w-4/6">
+            <div className="text-white text-sm  mx-auto break-words w-fit max-lg:mx-8 lg:text-lg lg:w-4/6">
               I like to create awesome products with great user experiences.
             </div>
           </div>
           <div
-            className={`text-mindaro flex justify-evenly space-x-5 w-5/6 mx-auto transition duration-1000  ${
+            className={`text-mindaro text-sm lg:text-base break-words flex justify-evenly space-x-7 w-5/6 mx-auto transition duration-1000  ${
               fadeIn && "-translate-x-full"
             }`}
           >
@@ -44,7 +44,7 @@ export default function MainPage({ fadeIn }: { fadeIn: boolean }) {
             </div>
           </div>
           <div
-            className={`flex space-x-5 w-3/4 mx-auto transition duration-1000 opacity-90 ${
+            className={`flex space-x-5 lg:w-3/4 mx-auto transition duration-1000 opacity-90 ${
               fadeIn && "-translate-x-full"
             }`}
           >
@@ -112,6 +112,7 @@ export default function MainPage({ fadeIn }: { fadeIn: boolean }) {
             }`}
           >
             <img
+              className="rounded-full shadow"
               height="auto"
               width={windowWidth < 1024 ? "400" : "500"}
               src={windowWidth < 1024 ? cropped_denis : denis}
